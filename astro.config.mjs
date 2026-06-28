@@ -21,8 +21,8 @@ const prettyCodeOptions = {
 
 // https://astro.build/config
 export default defineConfig({
-  site: CONFIG.site.url,
-  output: 'server',
+  output: 'static',
+  site: 'https://anu9am.github.io',
 
   adapter: cloudflare(),
 
