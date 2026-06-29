@@ -37,8 +37,13 @@ export default function CREATEInternshipPage() {
               />
               <BlurFade delay={BLUR_FADE_DELAY * 2}>
                 {/* Styled identically to "Research & Work Experience" */}
-                <h2 className="text-xl font-bold mt-2">
-                  EPFL, Switzerland 🇨🇭
+                <h2 className="text-xl font-bold mt-2 flex items-center gap-2">
+                  EPFL, Switzerland 
+                  <img 
+                    src="https://cdn-icons-png.flaticon.com/512/330/330480.png" 
+                    alt="Switzerland Flag" 
+                    className="h-5 w-5 object-contain"
+                  />
                 </h2>
               </BlurFade>
             </div>
