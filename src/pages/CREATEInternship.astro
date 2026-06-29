@@ -1,0 +1,9 @@
+---
+export const prerender = true;
+import Layout from "../layouts/Layout.astro";
+import CREATEInternshipPage from "@/components/CREATEInternshipPage";
+---
+
+<Layout title="CREATE Lab Internship - Anupam Chatterjee">
+  <CREATEInternshipPage client:only="react" />
+</Layout>
