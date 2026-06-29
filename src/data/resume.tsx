@@ -99,7 +99,7 @@ export const DATA = {
       badges: ["Research Internship", "Remote"], //[cite: 6]
       location: "Switzerland", //[cite: 6]
       title: "Research Intern (Guide: Prof. Josie Hughes)", //[cite: 6]
-      logoUrl: "https://www.google.com/s2/favicons?domain=epfl.ch&size=256",
+      logoUrl: "/Logos/EPFL.png",
       start: "March 2026", //[cite: 6]
       end: "May 2026", //[cite: 6]
       description:
@@ -111,7 +111,7 @@ export const DATA = {
       badges: ["Research Internship", "Onsite"], //[cite: 6]
       location: "IIT Madras, India", //[cite: 6]
       title: "Research Intern (Guide: Prof. Jayaraj Joseph)", //[cite: 6]
-      logoUrl: "",
+      logoUrl: "/Logos/IIT_Madras.png",
       start: "September 2025", //[cite: 6]
       end: "November 2025", //[cite: 6]
       description:
@@ -123,7 +123,7 @@ export const DATA = {
       badges: ["Research Internship", "Onsite"], //[cite: 6]
       location: "IIT Bombay, India", //[cite: 6]
       title: "Research Intern (Guide: Prof. Kavi Arya)", //[cite: 6]
-      logoUrl: "",
+      logoUrl: "/Logos/IIT_Bombay.png",
       start: "May 2025", //[cite: 6]
       end: "July 2025", //[cite: 6]
       description:
@@ -135,7 +135,7 @@ export const DATA = {
       school: "Dr. A. P. J. Abdul Kalam Technical University (KIET Group of Institutions)", //[cite: 6]
       href: "#",
       degree: "Bachelor of Technology in Electronics and Communication Engineering (CGPA: 7.26/10)", //[cite: 6]
-      logoUrl: "",
+      logoUrl: "/Logos/AKTU.png",
       start: "October 2023", //[cite: 6]
       end: "July 2027", //[cite: 6]
     },
@@ -212,7 +212,7 @@ export const DATA = {
       dates: "September 2025 - November 2025", //[cite: 6]
       location: "HMEL", //[cite: 6]
       description: "Proposed a systems-level concept integrating offshore renewables and hydrogen production through Dynamic Floating Hydrogen Islands. Won 2nd position nationally.", //[cite: 6]
-      image: "",
+      image: "/Logos/HMEL.png",
       win: "2nd Position Nationally", //[cite: 6]
       links: [],
     },
@@ -221,7 +221,7 @@ export const DATA = {
       dates: "September 2024 - October 2024", //[cite: 6]
       location: "BETIC Lab, IIT Bombay", //[cite: 6]
       description: "Won Best Prototype for building 'Derma Scan', a portable dermatological screening device using Raspberry Pi and CNN-based image classification.", //[cite: 6]
-      image: "",
+      image: "/Logos/BETIC.png",
       win: "Best Prototype", //[cite: 6]
       links: [],
     },
@@ -230,7 +230,7 @@ export const DATA = {
       dates: "June 2025", //[cite: 6]
       location: "Indian Patent Office", //[cite: 6]
       description: "Filed and published a patent (App No: 202511061177) for a skin condition detection system utilizing Machine Learning.", //[cite: 6]
-      image: "",
+      image: "/Logos/eYantra.png",
       links: [],
     },
   ],
