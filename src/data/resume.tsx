@@ -94,40 +94,43 @@ export const DATA = {
 
   work: [
     {
-      company: "CREATE Lab, EPFL", //[cite: 6]
+      company: "CREATE Lab",
       href: "#",
-      badges: ["Research Internship", "Remote"], //[cite: 6]
-      location: "Switzerland", //[cite: 6]
-      title: "Research Intern (Guide: Prof. Josie Hughes)", //[cite: 6]
+      badges: ["Research Internship", "Remote"],
+      location: "EPFL, Switzerland",
+      title: "Research Intern",
+      guide: "Prof. Josie Hughes", // Added new custom field
       logoUrl: "/Logos/EPFL.png",
-      start: "Mar'26", //[cite: 6]
-      end: "May'26", //[cite: 6]
+      start: "Mar'26",
+      end: "Jul'26",
       description:
-        "Working on control and actuation systems for the Open Parametric Hand (OPH) in prosthetic applications. Designing feedback loops for smart actuators, tuning control parameters for stable movements, and integrating actuator systems with overall hardware architecture.", //[cite: 6]
+        "Working on control and actuation systems for the Open Parametric Hand (OPH) in prosthetic applications. Designing feedback loops for smart actuators, tuning control parameters for stable movements, and integrating actuator systems with overall hardware architecture.",
     },
     {
-      company: "Healthcare Technology Innovation Centre (HTIC)", //[cite: 6]
+      company: "Healthcare Technology Innovation Centre (HTIC)",
       href: "#",
-      badges: ["Research Internship", "Onsite"], //[cite: 6]
-      location: "IIT Madras, India", //[cite: 6]
-      title: "Research Intern (Guide: Prof. Jayaraj Joseph)", //[cite: 6]
+      badges: ["Research Internship", "Onsite"],
+      location: "IIT Madras, India",
+      title: "Academic Research Intern",
+      guide: "Prof. Jayaraj Joseph", // Added new custom field
       logoUrl: "/Logos/IIT_Madras.png",
-      start: "Sep'25", //[cite: 6]
-      end: "Nov'25", //[cite: 6]
+      start: "Sep'25",
+      end: "Nov'25",
       description:
-        "Configured and characterized the MAX30009 Bioimpedance (BioZ) analog front-end. Tuned analog and digital signal-conditioning stages including high-pass/low-pass filters and baseline drift removal to improve signal integrity.", //[cite: 6]
+        "Configured and characterized the MAX30009 Bioimpedance (BioZ) analog front-end. Tuned analog and digital signal-conditioning stages including high-pass/low-pass filters and baseline drift removal to improve signal integrity.",
     },
     {
-      company: "e-Yantra Lab, IIT Bombay", //[cite: 6]
+      company: "e-Yantra Lab",
       href: "#",
-      badges: ["Research Internship", "Onsite"], //[cite: 6]
-      location: "IIT Bombay, India", //[cite: 6]
-      title: "Research Intern (Guide: Prof. Kavi Arya)", //[cite: 6]
+      badges: ["Research Internship", "Onsite"],
+      location: "IIT Bombay, India",
+      title: "Project Intern",
+      guide: "Prof. Kavi Arya", // Added new custom field
       logoUrl: "/Logos/IIT_Bombay.png",
-      start: "May'25", //[cite: 6]
-      end: "Jul'25", //[cite: 6]
+      start: "May'25",
+      end: "Jul'25",
       description:
-        "Designed and implemented dual autonomous navigation systems for a two-wheeled self-balancing robot. Integrated PID control for path tracking and LQR control for balance using differential motor actuation.", //[cite: 6]
+        "Designed and implemented dual autonomous navigation systems for a two-wheeled self-balancing robot. Integrated PID control for path tracking and LQR control for balance using differential motor actuation.",
     },
   ],
   education: [
