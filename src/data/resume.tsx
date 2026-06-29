@@ -95,7 +95,7 @@ export const DATA = {
   work: [
     {
       company: "CREATE Lab",
-      href: "#",
+      href: "/epfl-internship",
       badges: ["Research Internship", "Remote"],
       location: "EPFL, Switzerland",
       title: "Research Intern",
