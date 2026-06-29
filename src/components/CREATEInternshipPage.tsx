@@ -43,11 +43,11 @@ export default function CREATEInternshipPage() {
               </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <div className="size-24 md:size-32 border rounded-xl shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
+              <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
                 <img 
                   alt="EPFL" 
                   src="/Logos/EPFL.png" 
-                  className="w-full h-full object-contain p-2" 
+                  className="w-full h-full object-cover" 
                 />
               </div>
             </BlurFade>
