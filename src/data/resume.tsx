@@ -20,7 +20,7 @@ export const DATA = {
   description:
     "Electronics and Communication Engineering student passionate about Robot Operating System (ROS2), Edge AI, and autonomous navigation.", //[cite: 6]
   summary:
-    "I am an engineering student at KIET Group of Institutions specializing in robotics, embedded systems, and machine learning[cite: 6]. I have pursued research internships at EPFL, IIT Madras, and IIT Bombay, working on everything from smart actuator control systems to autonomous navigation and bioimpedance signal conditioning[cite: 6]. I also recently filed a patent for a Machine Learning-based skin condition detection system[cite: 6].",
+    "I am an engineering student at Dr. A. P. J. Abdul Kalam Technical University specializing in robotics, embedded systems, and machine learning[cite: 6]. I have pursued research internships at EPFL, IIT Madras, and IIT Bombay, working on everything from smart actuator control systems to autonomous navigation and bioimpedance signal conditioning[cite: 6]. I also recently filed a patent for a Machine Learning-based skin condition detection system[cite: 6].",
   avatarUrl: "/me.png",
   ogImage: "/og_image.png",
   sections: {
@@ -100,8 +100,8 @@ export const DATA = {
       location: "Switzerland", //[cite: 6]
       title: "Research Intern (Guide: Prof. Josie Hughes)", //[cite: 6]
       logoUrl: "/Logos/EPFL.png",
-      start: "March 2026", //[cite: 6]
-      end: "May 2026", //[cite: 6]
+      start: "Mar'26", //[cite: 6]
+      end: "May'26", //[cite: 6]
       description:
         "Working on control and actuation systems for the Open Parametric Hand (OPH) in prosthetic applications. Designing feedback loops for smart actuators, tuning control parameters for stable movements, and integrating actuator systems with overall hardware architecture.", //[cite: 6]
     },
@@ -112,8 +112,8 @@ export const DATA = {
       location: "IIT Madras, India", //[cite: 6]
       title: "Research Intern (Guide: Prof. Jayaraj Joseph)", //[cite: 6]
       logoUrl: "/Logos/IIT_Madras.png",
-      start: "September 2025", //[cite: 6]
-      end: "November 2025", //[cite: 6]
+      start: "Sep'25", //[cite: 6]
+      end: "Nov'25", //[cite: 6]
       description:
         "Configured and characterized the MAX30009 Bioimpedance (BioZ) analog front-end. Tuned analog and digital signal-conditioning stages including high-pass/low-pass filters and baseline drift removal to improve signal integrity.", //[cite: 6]
     },
@@ -124,27 +124,27 @@ export const DATA = {
       location: "IIT Bombay, India", //[cite: 6]
       title: "Research Intern (Guide: Prof. Kavi Arya)", //[cite: 6]
       logoUrl: "/Logos/IIT_Bombay.png",
-      start: "May 2025", //[cite: 6]
-      end: "July 2025", //[cite: 6]
+      start: "May'25", //[cite: 6]
+      end: "Jul'25", //[cite: 6]
       description:
         "Designed and implemented dual autonomous navigation systems for a two-wheeled self-balancing robot. Integrated PID control for path tracking and LQR control for balance using differential motor actuation.", //[cite: 6]
     },
   ],
   education: [
     {
-      school: "Dr. A. P. J. Abdul Kalam Technical University (KIET Group of Institutions)", //[cite: 6]
+      school: "Dr. A. P. J. Abdul Kalam Technical University", //[cite: 6]
       href: "#",
       degree: "Bachelor of Technology in Electronics and Communication Engineering (CGPA: 7.26/10)", //[cite: 6]
       logoUrl: "/Logos/AKTU.png",
-      start: "October 2023", //[cite: 6]
-      end: "July 2027", //[cite: 6]
+      start: "Oct'23", //[cite: 6]
+      end: "Jul'27", //[cite: 6]
     },
   ],
   projects: [
     {
       title: "Maze Solver Bot", //[cite: 6]
       href: "#",
-      dates: "August 2025 - March 2026", //[cite: 6]
+      dates: "Aug'25 - Mar'26", //[cite: 6]
       active: true,
       description:
         "Developed an FPGA-based autonomous maze-solving robot using Verilog HDL for post-harvest agricultural optimization. Achieved top 10 rank among over 680 teams in the e-Yantra Robotics Competition.", //[cite: 6]
@@ -160,7 +160,7 @@ export const DATA = {
     {
       title: "Balancing Builder Bot", //[cite: 6]
       href: "#",
-      dates: "August 2024 - March 2025", //[cite: 6]
+      dates: "Aug'24 - Mar'25", //[cite: 6]
       active: true,
       description:
         "Developed a two-wheeled self-balancing robot integrating inverted-pendulum dynamics and an autonomous pick-and-place mechanism. Secured 4th place internationally among 1008 teams.", //[cite: 6]
@@ -176,7 +176,7 @@ export const DATA = {
     {
       title: "Fastest Line Follower", //[cite: 6]
       href: "#",
-      dates: "August 2025 - September 2025", //[cite: 6]
+      dates: "Aug'25 - Sep'25", //[cite: 6]
       active: true,
       description:
         "Built a high-speed STM32-based line-follower robot using Pololu QTRX-16MD sensors for the Technoxian World Robotics Championship. Implemented PID-based tracking with yaw stabilization.", //[cite: 6]
@@ -192,7 +192,7 @@ export const DATA = {
     {
       title: "Derma Scan", //[cite: 6]
       href: "#",
-      dates: "September 2024 - October 2024", //[cite: 6]
+      dates: "Sep'24 - Oct'24", //[cite: 6]
       active: true,
       description:
         "Designed a portable dermatological screening device using Raspberry Pi. Deployed CNN-based image classification with optimized on-device inference.", //[cite: 6]
@@ -209,7 +209,7 @@ export const DATA = {
   hackathons: [
     {
       title: "QUEST 2025 Innovation Challenge", //[cite: 6]
-      dates: "September 2025 - November 2025", //[cite: 6]
+      dates: "Sep'25 - Nov'25", //[cite: 6]
       location: "HMEL", //[cite: 6]
       description: "Proposed a systems-level concept integrating offshore renewables and hydrogen production through Dynamic Floating Hydrogen Islands. Won 2nd position nationally.", //[cite: 6]
       image: "/Logos/HMEL.png",
@@ -218,7 +218,7 @@ export const DATA = {
     },
     {
       title: "Medical Device Hackathon (MEDHA 2024)", //[cite: 6]
-      dates: "September 2024 - October 2024", //[cite: 6]
+      dates: "Sep'24 - Oct'24", //[cite: 6]
       location: "BETIC Lab, IIT Bombay", //[cite: 6]
       description: "Won Best Prototype for building 'Derma Scan', a portable dermatological screening device using Raspberry Pi and CNN-based image classification.", //[cite: 6]
       image: "/Logos/BETIC.png",
@@ -227,7 +227,7 @@ export const DATA = {
     },
     {
       title: "Patent Published: A Dual-Module System for Skin Condition Detection", //[cite: 6]
-      dates: "June 2025", //[cite: 6]
+      dates: "Jun'25", //[cite: 6]
       location: "Indian Patent Office", //[cite: 6]
       description: "Filed and published a patent (App No: 202511061177) for a skin condition detection system utilizing Machine Learning.", //[cite: 6]
       image: "/Logos/eYantra.png",
