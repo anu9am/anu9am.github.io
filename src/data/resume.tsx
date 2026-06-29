@@ -99,7 +99,7 @@ export const DATA = {
       badges: ["Research Internship", "Remote"], //[cite: 6]
       location: "Switzerland", //[cite: 6]
       title: "Research Intern (Guide: Prof. Josie Hughes)", //[cite: 6]
-      logoUrl: "",
+      logoUrl: "https://www.google.com/s2/favicons?domain=epfl.ch&size=256",
       start: "March 2026", //[cite: 6]
       end: "May 2026", //[cite: 6]
       description:
