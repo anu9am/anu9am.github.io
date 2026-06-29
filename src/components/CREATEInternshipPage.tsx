@@ -20,7 +20,7 @@ function SectionBadge({ label }: { label: string }) {
   );
 }
 
-export default function EPFLInternshipPage() {
+export default function CREATEInternshipPage() {
   return (
     <main className="min-h-dvh flex flex-col gap-8 relative max-w-2xl mx-auto py-12 sm:py-24 px-6">
       
@@ -42,12 +42,14 @@ export default function EPFLInternshipPage() {
                 </h2>
               </BlurFade>
             </div>
-            
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
-                <AvatarImage alt="EPFL" src="/Logos/EPFL.png" className="object-contain bg-white p-2" />
-                <AvatarFallback>EPFL</AvatarFallback>
-              </Avatar>
+              <div className="size-24 md:size-32 border rounded-xl shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
+                <img 
+                  alt="EPFL" 
+                  src="/Logos/EPFL.png" 
+                  className="w-full h-full object-contain p-2" 
+                />
+              </div>
             </BlurFade>
           </div>
         </div>
