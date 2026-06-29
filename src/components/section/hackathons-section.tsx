@@ -30,10 +30,10 @@ export default function HackathonsSection() {
                   <img
                     src={hackathon.image}
                     alt={hackathon.title}
-                    className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border object-contain flex-none"
+                    className="size-12 md:size-16 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-xl shadow ring-2 ring-border object-contain flex-none"
                   />
                 ) : (
-                  <div className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border flex-none" />
+                  <div className="size-12 md:size-16 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-xl shadow ring-2 ring-border flex-none" />
                 )}
               </TimelineConnectItem>
               <div className="flex flex-1 flex-col justify-start gap-2 min-w-0">
