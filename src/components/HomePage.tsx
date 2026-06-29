@@ -149,6 +149,15 @@ export default function HomePage() {
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
+              <BlurFade delay={BLUR_FADE_DELAY * 2}>
+                <a 
+                  href="/Curriculum Vitae - Anupam Chatterjee.pdf" 
+                  target="_blank" 
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 py-2 mt-2 w-fit text-sm font-medium transition-colors shadow-sm"
+                >
+                  Download CV
+                </a>
+              </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
