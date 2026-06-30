@@ -74,7 +74,7 @@ export default function HTICInternshipPage() {
               <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
                 <img 
                   alt="IIT Madras HTIC" 
-                  src="/Logos/IITM.png" 
+                  src="/Logos/IIT_Madras.png" 
                   className="w-full h-full object-cover p-2" 
                 />
               </div>
