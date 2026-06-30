@@ -8,7 +8,7 @@ const BLUR_FADE_DELAY = 0.04;
 // Reusable component for the stylish "My Projects" style badge headings
 function SectionBadge({ label }: { label: string }) {
   return (
-    <div className="flex flex-col gap-y-4 items-center justify-center mb-6 mt-12">
+    <div className="flex flex-col gap-y-4 items-center justify-center my-6">
       <div className="flex items-center w-full">
         <div className="flex-1 h-px bg-linear-to-r from-transparent from-5% via-border via-95% to-transparent" />
         <div className="border bg-primary z-10 rounded-xl px-4 py-1">
@@ -22,7 +22,7 @@ function SectionBadge({ label }: { label: string }) {
 
 export default function CREATEInternshipPage() {
   return (
-    <main className="min-h-dvh flex flex-col gap-14 relative">
+    <main className="min-h-dvh flex flex-col gap-8 relative">
 
       {/* BACKGROUND "INTERNSHIP" TEXT */}
       <h1 className="text-[50px] sm:text-[90px] md:text-[120px] font-semibold font-mono bg-linear-to-b from-primary/30 to-secondary/10 text-transparent bg-clip-text absolute -top-10 md:-top-24 left-1/2 -translate-x-1/2 mask-[linear-gradient(to_bottom,black,black_30%,transparent_130%)] tracking-tighter uppercase [-webkit-text-stroke:2px_hsl(var(--primary)/0.6)] md:[-webkit-text-stroke:3px_hsl(var(--primary)/0.6)] whitespace-nowrap pointer-events-none select-none -z-10">
@@ -30,7 +30,7 @@ export default function CREATEInternshipPage() {
       </h1>
       
       {/* 1. HERO SECTION */}
-      <section id="hero">
+      <section id="hero" className="mt-24 md:mt-32">
         <div className="mx-auto w-full space-y-8">
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
             <div className="gap-2 flex flex-col order-2 md:order-1">
