@@ -108,7 +108,7 @@ export const DATA = {
     },
     {
       company: "Healthcare Technology Innovation Centre (HTIC)",
-      href: "#",
+      href: "/HTICInternship",
       badges: ["Research Internship", "Onsite"],
       location: "IIT Madras, India",
       title: "Academic Research Intern",
