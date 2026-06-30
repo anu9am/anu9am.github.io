@@ -135,15 +135,6 @@ export default function CREATEInternshipPage() {
               />
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 10}>
-            <a 
-              href="/epfl-certificate.pdf" 
-              target="_blank" 
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-full bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-6 py-2 w-fit text-sm font-medium transition-colors shadow-sm"
-            >
-              Download Certificate
-            </a>
-          </BlurFade>
         </div>
       </section>
 
