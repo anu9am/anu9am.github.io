@@ -1,3 +1,7 @@
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 import React from "react";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -21,6 +25,17 @@ function SectionBadge({ label }: { label: string }) {
 }
 
 export default function CREATEInternshipPage() {
+  // 1. Add state for the Lightbox
+  const [index, setIndex] = useState(0);
+  const [open, setOpen] = useState(false);
+
+  // 2. Define your specific photos array
+  const photos = [
+    { src: "/Photos/CREATE_Lab/The_OPH.png", alt: "The Hand" },
+    { src: "/Photos/CREATE_Lab/Load_Test.png", alt: "Load Test" },
+    { src: "/Photos/CREATE_Lab/Team.png", alt: "Team" },
+  ];
+
   return (
     <main className="min-h-dvh flex flex-col gap-8 relative">
 
@@ -107,18 +122,35 @@ export default function CREATEInternshipPage() {
       {/* 4. PHOTOS */}
       <section id="photos">
         <SectionBadge label="Photos" />
+        
+        {/* The Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 items-start">
-          <BlurFade delay={BLUR_FADE_DELAY * 6}>
-            <img src="/Photos/CREATE_Lab/The_OPH.png" alt="The Hand" className="w-full rounded-xl object-cover aspect-square shadow-sm border" />
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <img src="/Photos/CREATE_Lab/Load_Test.png" alt="Load Test" className="w-full rounded-xl object-cover aspect-square shadow-sm border" />
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 8}>
-            <img src="/Photos/CREATE_Lab/Team.png" alt="Team" className="w-full rounded-xl object-cover aspect-square shadow-sm border" />
-          </BlurFade>
+          {photos.map((photo, i) => (
+            <BlurFade key={i} delay={BLUR_FADE_DELAY * 6 + (i * 0.05)}>
+              <div 
+                onClick={() => { setIndex(i); setOpen(true); }}
+                className="cursor-pointer overflow-hidden rounded-xl border border-border shadow-sm transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:ring-2 hover:ring-primary/50 bg-muted"
+              >
+                <img 
+                  src={photo.src} 
+                  alt={photo.alt} 
+                  className="w-full object-cover aspect-square transition-transform duration-500 hover:scale-110" 
+                />
+              </div>
+            </BlurFade>
+          ))}
         </div>
       </section>
+
+      {/* The Interactive Lightbox Overlay */}
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        index={index}
+        slides={photos}
+        on={{ view: ({ index: currentIndex }) => setIndex(currentIndex) }} 
+        controller={{ closeOnBackdropClick: true }}
+      />
 
       {/* TECH STACK SECTION */}
       <section id="tech-stack">
