@@ -75,7 +75,7 @@ export default function CREATEInternshipPage() {
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
             <p>
-              As a Research Intern at the CREATE Lab, I focused on the intersection of physical intelligence and soft robotics. My daily responsibilities involved deep dives into hardware-software integration, bringing dynamic robotic concepts to life in a world-class research environment.
+              I worked as a Research Intern at CREATE Lab, EPFL (École Polytechnique Fédérale de Lausanne) under the supervision of Prof. Josie Hughes. My work focused on developing and optimizing the control and actuation system for the Open Parametric Hand (OPH), a research platform for next-generation prosthetic hands. The internship involved studying the biomechanics of the human hand, biomimetic tendon-driven actuation, and designing intelligent feedback-controlled systems to improve dexterity and responsiveness for prosthetic applications.
             </p>
           </div>
         </BlurFade>
@@ -88,9 +88,7 @@ export default function CREATEInternshipPage() {
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
               <p>
-                Working on control and actuation systems for the Open Parametric Hand (OPH) in prosthetic applications. 
-                Designing feedback loops for smart actuators, tuning control parameters for stable movements, and 
-                integrating actuator systems with overall hardware architecture.
+                The Voice-Controlled Open Parametric Hand is a compact, lightweight, tendon-driven bionic hand designed to replicate the anatomical structure and movement of the human hand. Unlike the manually operated OPH platform, this project aimed to create a fully motorized version using five micro metal gear motors with integrated voice control, enabling users to perform multiple grasping patterns and gestures through a single input source. By combining biomimetic tendon routing, intelligent actuation, and voice-based interaction, the project explores an accessible, high-performance alternative to conventional body-powered and EMG-controlled prosthetic hands. The OPH platform is highly customizable, lightweight, and intended for advanced prosthetic and robotic manipulation applications.
               </p>
             </div>
           </BlurFade>
@@ -111,14 +109,40 @@ export default function CREATEInternshipPage() {
         <SectionBadge label="Photos" />
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 items-start">
           <BlurFade delay={BLUR_FADE_DELAY * 6}>
-            <img src="/photo1.jpg" alt="Lab Setup" className="w-full rounded-xl object-cover aspect-square shadow-sm border" />
+            <img src="/Photos/CREATE_Lab/The_OPH.png" alt="The Hand" className="w-full rounded-xl object-cover aspect-square shadow-sm border" />
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <img src="/photo2.jpg" alt="Campus" className="w-full rounded-xl object-cover aspect-square shadow-sm border" />
+            <img src="/Photos/CREATE_Lab/Load_Test.png" alt="Load Test" className="w-full rounded-xl object-cover aspect-square shadow-sm border" />
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 8}>
-            <img src="/photo3.jpg" alt="Team" className="w-full rounded-xl object-cover aspect-square shadow-sm border" />
+            <img src="/Photos/CREATE_Lab/Team.png" alt="Team" className="w-full rounded-xl object-cover aspect-square shadow-sm border" />
           </BlurFade>
+        </div>
+      </section>
+
+      {/* TECH STACK SECTION */}
+      <section id="tech-stack">
+        <SectionBadge label="Tech Stack" />
+        <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+          {[
+            { name: "PID Control", icon: "/Icons/pid.png" },
+            { name: "C++", icon: "/Icons/cpp.png" },
+            { name: "OpenSCAD", icon: "/Icons/openscad.png" },
+            { name: "Fusion 360", icon: "/Icons/fusion.png" },
+            { name: "Teensy 4.1", icon: "/Icons/teensy.png" },
+            { name: "Voice Recognition", icon: "/Icons/voice.png" },
+          ].map((tech, idx) => (
+            <BlurFade key={tech.name} delay={BLUR_FADE_DELAY * 10 + idx * 0.05}>
+              <div className="flex items-center gap-2 px-3 py-1.5 bg-muted/50 hover:bg-muted transition-colors border border-border rounded-lg text-sm font-medium text-foreground">
+                <img 
+                  src={tech.icon} 
+                  alt={`${tech.name} icon`} 
+                  className="size-5 object-contain" 
+                />
+                <span>{tech.name}</span>
+              </div>
+            </BlurFade>
+          ))}
         </div>
       </section>
 
@@ -140,7 +164,7 @@ export default function CREATEInternshipPage() {
 
       {/* 6. REFERENCE (GUIDES INFO) */}
       <section id="reference">
-        <SectionBadge label="Reference" />
+        <SectionBadge label="References" />
         <div className="flex flex-col gap-2">
           
           {/* Reference 1: Prof. Josie Hughes */}
@@ -157,9 +181,6 @@ export default function CREATEInternshipPage() {
                 </div>
                 <div className="font-sans text-sm font-medium text-foreground">
                   Head of CREATE Lab, EPFL
-                </div>
-                <div className="font-sans text-sm text-muted-foreground leading-relaxed mt-1">
-                  Specializes in soft robotics, physical intelligence, and robotic design.
                 </div>
                 <a href="mailto:josie.hughes@epfl.ch" className="font-sans text-sm italic text-primary hover:underline mt-1 break-all w-fit">
                   josie.hughes@epfl.ch
@@ -182,9 +203,6 @@ export default function CREATEInternshipPage() {
                 </div>
                 <div className="font-sans text-sm font-medium text-foreground">
                   Postdoctoral Researcher at CREATE Lab, EPFL
-                </div>
-                <div className="font-sans text-sm text-muted-foreground leading-relaxed mt-1">
-                  Focuses on computational design, bio-inspired robotics, and flexible sensor integration.
                 </div>
                 <a href="mailto:kieran.gilday@epfl.ch" className="font-sans text-sm italic text-primary hover:underline mt-1 break-all w-fit">
                   kieran.gilday@epfl.ch
