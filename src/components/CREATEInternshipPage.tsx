@@ -30,7 +30,7 @@ export default function CREATEInternshipPage() {
       </h1>
       
       {/* 1. HERO SECTION */}
-      <section id="hero" className="mt-24 md:mt-32">
+      <section id="hero" className="mt-10 md:mt-10">
         <div className="mx-auto w-full space-y-8">
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
             <div className="gap-2 flex flex-col order-2 md:order-1">
