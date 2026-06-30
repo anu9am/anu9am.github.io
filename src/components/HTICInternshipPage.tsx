@@ -24,7 +24,7 @@ function SectionBadge({ label }: { label: string }) {
   );
 }
 
-export default function IITMadrasInternshipPage() {
+export default function HTICInternshipPage() {
   // 1. Add state for the Lightbox
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
