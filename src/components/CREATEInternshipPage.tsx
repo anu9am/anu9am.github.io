@@ -50,6 +50,10 @@ export default function CREATEInternshipPage() {
                     className="h-5 w-5 object-contain"
                   />
                 </h2>
+                {/* Internship Duration */}
+                <p className="text-lg font-medium text-muted-foreground italic mt-1">
+                  March 2026 - July 2026
+                </p>
               </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
@@ -125,7 +129,7 @@ export default function CREATEInternshipPage() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <div className="w-full max-w-[500px] rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
               <img 
-                src="/epfl-certificate.png" 
+                src="/Photos/CREATE_Lab/Internship_Certificate_CREATE.png" 
                 alt="EPFL Internship Certificate" 
                 className="w-full h-auto object-contain" 
               />
@@ -146,29 +150,59 @@ export default function CREATEInternshipPage() {
       {/* 6. REFERENCE (GUIDES INFO) */}
       <section id="reference">
         <SectionBadge label="Reference" />
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
-          <div className="flex items-start md:items-center gap-4 w-full text-left py-4">
-            <img
-              src="/Photos/CREATE_Lab/Prof_Josie.png"
-              alt="Prof. Josie Hughes"
-              className="size-16 md:size-20 p-1 border rounded-xl shadow ring-4 ring-border overflow-hidden object-contain flex-none bg-muted"
-            />
-            <div className="flex-1 min-w-0 gap-1 flex flex-col">
-              <div className="font-semibold text-lg leading-none">
-                Prof. Josie Hughes
+        <div className="flex flex-col gap-2">
+          
+          {/* Reference 1: Prof. Josie Hughes */}
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex items-start md:items-center gap-4 w-full text-left py-4">
+              <img
+                src="/Photos/CREATE_Lab/Prof_Josie.png"
+                alt="Prof. Josie Hughes"
+                className="size-16 md:size-20 p-1 border rounded-xl shadow ring-4 ring-border overflow-hidden object-contain flex-none bg-muted"
+              />
+              <div className="flex-1 min-w-0 gap-1 flex flex-col">
+                <div className="font-semibold text-lg leading-none">
+                  Prof. Josie Hughes
+                </div>
+                <div className="font-sans text-sm font-medium text-foreground">
+                  Head of CREATE Lab, EPFL
+                </div>
+                <div className="font-sans text-sm text-muted-foreground leading-relaxed mt-1">
+                  Specializes in soft robotics, physical intelligence, and robotic design.
+                </div>
+                <a href="mailto:josie.hughes@epfl.ch" className="font-sans text-sm italic text-primary hover:underline mt-1 break-all w-fit">
+                  josie.hughes@epfl.ch
+                </a>
               </div>
-              <div className="font-sans text-sm font-medium text-foreground">
-                Head of CREATE Lab, EPFL
-              </div>
-              <div className="font-sans text-sm text-muted-foreground leading-relaxed mt-1">
-                Specializes in soft robotics, physical intelligence, and robotic design.
-              </div>
-              <a href="mailto:josie.hughes@epfl.ch" className="font-sans text-sm italic text-primary hover:underline mt-1 break-all w-fit">
-                josie.hughes@epfl.ch
-              </a>
             </div>
-          </div>
-        </BlurFade>
+          </BlurFade>
+
+          {/* Reference 2: Dr. Kieran Gilday */}
+          <BlurFade delay={BLUR_FADE_DELAY * 12}>
+            <div className="flex items-start md:items-center gap-4 w-full text-left py-4">
+              <img
+                src="/Photos/CREATE_Lab/Dr_Kieran.png"
+                alt="Dr. Kieran Gilday"
+                className="size-16 md:size-20 p-1 border rounded-xl shadow ring-4 ring-border overflow-hidden object-contain flex-none bg-muted"
+              />
+              <div className="flex-1 min-w-0 gap-1 flex flex-col">
+                <div className="font-semibold text-lg leading-none">
+                  Dr. Kieran Gilday
+                </div>
+                <div className="font-sans text-sm font-medium text-foreground">
+                  Postdoctoral Researcher at CREATE Lab, EPFL
+                </div>
+                <div className="font-sans text-sm text-muted-foreground leading-relaxed mt-1">
+                  Focuses on computational design, bio-inspired robotics, and flexible sensor integration.
+                </div>
+                <a href="mailto:kieran.gilday@epfl.ch" className="font-sans text-sm italic text-primary hover:underline mt-1 break-all w-fit">
+                  kieran.gilday@epfl.ch
+                </a>
+              </div>
+            </div>
+          </BlurFade>
+
+        </div>
       </section>
 
     </main>
