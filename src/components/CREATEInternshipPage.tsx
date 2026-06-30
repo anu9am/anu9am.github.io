@@ -93,7 +93,7 @@ export default function CREATEInternshipPage() {
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border">
               <img 
-                src="/project-demo.gif" 
+                src="/Photos/CREATE_Lab/Demonstration.gif" 
                 alt="OPH Actuator Demonstration" 
                 className="w-full h-auto object-cover" 
               />
@@ -149,7 +149,7 @@ export default function CREATEInternshipPage() {
         <BlurFade delay={BLUR_FADE_DELAY * 11}>
           <div className="flex items-start md:items-center gap-4 w-full text-left py-4">
             <img
-              src="/Logos/prof-josie.png"
+              src="/Photos/CREATE_Lab/Prof_Josie.png"
               alt="Prof. Josie Hughes"
               className="size-16 md:size-20 p-1 border rounded-xl shadow ring-4 ring-border overflow-hidden object-contain flex-none bg-muted"
             />
