@@ -86,7 +86,7 @@ export default function eYantraInternshipPage() {
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
             <p>
-              I worked as a Research Intern at the e-Yantra Lab, IIT Bombay, under the supervision of Prof. Kavi Arya[cite: 2]. My research and development efforts were focused on designing advanced, dual autonomous navigation systems for a two-wheeled self-balancing robot[cite: 2]. The core objective was to build a highly robust platform capable of stabilizing itself dynamically while navigating complex environments using varied sensor methodologies.
+              Conducted a Research Internship at the e-Yantra Lab, IIT Bombay under Prof. Kavi Arya, focusing on autonomous navigation for a two-wheeled self-balancing robot. My work involved developing vision-based and sensor-based navigation techniques while the robot maintained dynamic balance using LQR and PID control.
             </p>
           </div>
         </BlurFade>
@@ -96,42 +96,83 @@ export default function eYantraInternshipPage() {
       <section id="project">
         <SectionBadge label="The Project" />
         <div className="flex flex-col gap-6">
+          
+          {/* Vision Navigation Text */}
           <BlurFade delay={BLUR_FADE_DELAY * 4}>
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
-              <p>
-                To ensure high reliability across different environments, I developed two distinct modes of autonomous navigation for the self-balancing platform:
-              </p>
-
-              <h3 className="text-foreground font-semibold mt-6 mb-2">1. Vision-Based Navigation</h3>
-              <p>
-                This architecture enables the robot to localize and navigate dynamically using an MPU6050 IMU, motor encoders, and an external camera feed. Key features include:
-              </p>
-              <ul className="list-disc pl-6 mb-4 space-y-1">
-                <li><strong>Self-Balancing:</strong> Implemented precise LQR and PID control loops to maintain two-wheeled stability using real-time data from the MPU6050 and motor encoders.</li>
-                <li><strong>Vision Navigation:</strong> Utilized OpenCV and ArUco markers for accurate spatial localization and target tracking.</li>
-                <li><strong>Waypoint Navigation:</strong> Developed an interactive interface allowing the robot to navigate to user-defined waypoints via camera feed clicks.</li>
-                <li><strong>Bluetooth Communication:</strong> Integrated serial Bluetooth capabilities to transmit navigation commands and telemetry efficiently.</li>
+              <h3 className="text-foreground font-semibold mb-2">Vision-Based Navigation</h3>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Developed an autonomous navigation system using computer vision and ArUco marker detection.</li>
+                <li>Implemented camera calibration, robot localization, and real-time path planning using an overhead camera.</li>
+                <li>Enabled accurate navigation in controlled environments without requiring onboard cameras or complex sensors.</li>
               </ul>
-
-              <h3 className="text-foreground font-semibold mt-6 mb-2">2. Line-Based Navigation</h3>
-              <p>
-                As a secondary navigation methodology, I implemented a robust trajectory-tracking system on the same self-balancing platform. Initially, I developed a white-line following system utilizing a 3-channel optical reflectance array. However, to overcome the inherent unreliability of optical sensors under varying ambient lighting conditions, I successfully transitioned the architecture to a 5-channel analog Hall sensor array, enabling highly stable and interference-free magnetic line following.
-              </p>
             </div>
           </BlurFade>
 
+          {/* Vision Navigation Video */}
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
-              <img 
-                src="/Photos/eYantra/Project_Demo.gif" 
-                alt="e-Yantra Robot Demonstration" 
+              <video 
+                src="/Photos/eYantra/Vision_Demo.mp4" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
                 className="w-full h-auto object-cover" 
               />
             </div>
           </BlurFade>
+
+          {/* Line Navigation Text */}
+          <BlurFade delay={BLUR_FADE_DELAY * 6}>
+            <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
+              <h3 className="text-foreground font-semibold mt-4 mb-2">Line-Based Navigation</h3>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Implemented autonomous path following while maintaining dynamic balance.</li>
+                <li>Developed white/black line following using a 3-channel optical sensor array.</li>
+                <li>Designed a 5-channel analog Hall effect sensor array for magnetic track following, providing a reliable alternative to optical tracking under varying ambient lighting conditions.</li>
+              </ul>
+            </div>
+          </BlurFade>
+
+          {/* Line Navigation Videos (Side-by-Side) */}
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+                <video 
+                  src="/Photos/eYantra/Line_Demo1.mp4" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-auto object-cover" 
+                />
+              </div>
+              <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+                <video 
+                  src="/Photos/eYantra/Line_Demo2.mp4" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-auto object-cover" 
+                />
+              </div>
+            </div>
+          </BlurFade>
+
+          {/* Robot Platform Callout */}
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+            <div className="bg-muted/50 border border-border rounded-lg p-4 mt-2">
+              <p className="text-sm font-medium text-foreground">
+                <strong className="text-primary">Robot Platform:</strong> Both navigation systems were developed on the same two-wheeled self-balancing robot, with balance control handled independently using LQR and PID controllers.
+              </p>
+            </div>
+          </BlurFade>
+
         </div>
       </section>
-
+      
       {/* 4. PHOTOS */}
       <section id="photos">
         <SectionBadge label="Photos" />
