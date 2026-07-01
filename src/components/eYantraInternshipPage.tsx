@@ -86,7 +86,7 @@ export default function eYantraInternshipPage() {
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
             <p>
-              Conducted a Research Internship at the e-Yantra Lab, IIT Bombay under Prof. Kavi Arya, focusing on autonomous navigation for a two-wheeled self-balancing robot. My work involved developing vision-based and sensor-based navigation techniques while the robot maintained dynamic balance using LQR and PID control.
+              Conducted a Research Internship at the e-Yantra Lab, IIT Bombay under Prof. Kavi Arya, focusing on autonomous navigation for a two-wheeled self-balancing robot. My work involved developing vision-based and line-based navigation techniques while the robot maintained dynamic balance using LQR and PID control.
             </p>
           </div>
         </BlurFade>
@@ -165,7 +165,7 @@ export default function eYantraInternshipPage() {
           <BlurFade delay={BLUR_FADE_DELAY * 8}>
             <div className="bg-muted/50 border border-border rounded-lg p-4 mt-2">
               <p className="text-sm font-medium text-foreground">
-                <strong className="text-primary">Robot Platform:</strong> Both navigation systems were developed on the same two-wheeled self-balancing robot, with balance control handled independently using LQR and PID controllers.
+                <strong className="text-primary">Robot Platform:</strong> Both navigation systems were developed on the same two-wheeled self-balancing robot, with balance control handled independently using LQR and PID controller.
               </p>
             </div>
           </BlurFade>
@@ -208,11 +208,11 @@ export default function eYantraInternshipPage() {
         <SectionBadge label="Tech Stack" />
         <div className="flex flex-wrap gap-3 justify-center md:justify-start">
           {[
-            { name: "C++", icon: "/Icons/cpp.png" },
-            { name: "Python", icon: "/Icons/python.png" },
             { name: "OpenCV", icon: "/Icons/opencv.png" },
+            { name: "Python", icon: "/Icons/python.png" },
+            { name: "C++", icon: "/Icons/cpp.png" },
             { name: "PID & LQR Control", icon: "/Icons/control.png" },
-            { name: "MPU6050 & Encoders", icon: "/Icons/sensor.png" },
+            { name: "Sensor Fusion", icon: "/Icons/sensor.png" },
           ].map((tech, idx) => (
             <BlurFade key={tech.name} delay={BLUR_FADE_DELAY * 10 + idx * 0.05}>
               <div className="flex items-center gap-2 px-3 py-1.5 bg-muted/50 hover:bg-muted transition-colors border border-border rounded-lg text-sm font-medium text-foreground">
@@ -241,15 +241,6 @@ export default function eYantraInternshipPage() {
               />
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 9.5}>
-            <div className="w-full max-w-[400px] rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
-              <img 
-                src="/Photos/eYantra/Certificate_Page2.png" 
-                alt="e-Yantra Certificate Page 2" 
-                className="w-full h-auto object-contain" 
-              />
-            </div>
-          </BlurFade>
         </div>
       </section>
 
@@ -271,7 +262,7 @@ export default function eYantraInternshipPage() {
                   Prof. Kavi Arya
                 </div>
                 <div className="font-sans text-sm font-medium text-foreground">
-                  Professor, CSE Dept. & Principal Investigator, e-Yantra Project, IIT Bombay
+                  Professor (Rtd.), IIT Bombay
                 </div>
                 <a href="mailto:kavi@cse.iitb.ac.in" className="font-sans text-sm italic text-primary hover:underline mt-1 break-all w-fit">
                   kavi@cse.iitb.ac.in
