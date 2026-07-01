@@ -121,7 +121,7 @@ export const DATA = {
     },
     {
       company: "e-Yantra Lab",
-      href: "#",
+      href: "/eYantraInternship",
       badges: ["Research Internship", "Onsite"],
       location: "IIT Bombay, India",
       title: "Project Intern",
