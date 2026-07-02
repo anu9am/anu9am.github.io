@@ -9,7 +9,6 @@ import HackathonsSection from "@/components/section/hackathons-section";
 import PhotosSection from "@/components/section/photos-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
-// Note: ArrowUpRight import is removed since there are no hyperlinks in education now
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -49,7 +48,6 @@ const sectionComponents: Record<string, React.ReactNode> = {
         <div className="flex flex-col gap-8">
           {DATA.education.map((education, index) => (
             <BlurFade key={education.school} delay={BLUR_FADE_DELAY * 8 + index * 0.05}>
-              {/* Changed <a> to <div> to remove hyperlinks */}
               <div className="flex items-start gap-x-3 w-full">
                 
                 {/* Logo Section */}
@@ -65,7 +63,6 @@ const sectionComponents: Record<string, React.ReactNode> = {
                 
                 {/* Responsive Text Layout */}
                 <div className="w-full flex flex-col sm:flex-row justify-between items-start gap-2 sm:gap-4 min-w-0">
-                  
                   {/* Left Side (Desktop) / Top Stack (Mobile) */}
                   <div className="flex flex-col gap-1.5 min-w-0">
                     <h3 className="font-semibold text-base sm:text-lg leading-none">
@@ -74,7 +71,6 @@ const sectionComponents: Record<string, React.ReactNode> = {
                     <div className="font-medium text-sm text-foreground">
                       {education.degree}
                     </div>
-                    {/* Added support for the department field */}
                     {education.department && (
                       <div className="text-sm text-muted-foreground">
                         {education.department}
@@ -86,7 +82,6 @@ const sectionComponents: Record<string, React.ReactNode> = {
                   <div className="text-sm text-muted-foreground sm:text-right shrink-0 mt-1 sm:mt-0">
                     {education.start} - {education.end}
                   </div>
-
                 </div>
               </div>
             </BlurFade>
@@ -180,9 +175,64 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Rendering Loop for Dynamic Sections */}
       {orderedSections.map((key) => (
         <React.Fragment key={key}>
           {sectionComponents[key]}
+
+          {/* Injecting the Patent Section directly after Hackathons */}
+          {key === "hackathons" && DATA.patent && (
+            <section id="patent">
+              <div className="flex min-h-0 flex-col gap-y-6">
+                <BlurFade delay={BLUR_FADE_DELAY * 14}>
+                  <h2 className="text-xl font-bold">Patent & Intellectual Property</h2>
+                </BlurFade>
+                
+                <div className="flex flex-col gap-8">
+                  {/* @ts-ignore - Supressing TS error in case patent wasn't typed in the template */}
+                  {DATA.patent.map((item: any, index: number) => (
+                    <BlurFade key={index} delay={BLUR_FADE_DELAY * 15 + index * 0.05}>
+                      <div className="flex items-start gap-x-3 w-full">
+                        
+                        {/* Logo Section */}
+                        {item.logoUrl ? (
+                          <img
+                            src={item.logoUrl}
+                            alt="Patent Logo"
+                            className="size-12 md:size-16 p-1 border rounded-xl shadow ring-2 ring-border overflow-hidden object-contain flex-none"
+                          />
+                        ) : (
+                          <div className="size-12 md:size-16 p-1 border rounded-xl shadow ring-2 ring-border bg-muted flex-none" />
+                        )}
+                        
+                        {/* Responsive Text Layout (Matches Education Section) */}
+                        <div className="w-full flex flex-col sm:flex-row justify-between items-start gap-2 sm:gap-4 min-w-0">
+                          {/* Left Side (Desktop) / Top Stack (Mobile) */}
+                          <div className="flex flex-col gap-1.5 min-w-0">
+                            <h3 className="font-semibold text-base sm:text-lg leading-none">
+                              {item.title}
+                            </h3>
+                            <div className="font-medium text-sm text-foreground flex items-center gap-2 mt-1">
+                              <span className="text-primary font-semibold">{item.status}</span>
+                              <span className="text-muted-foreground hidden sm:inline">•</span>
+                              <span className="text-muted-foreground">App No: {item.applicationNumber}</span>
+                            </div>
+                          </div>
+                          
+                          {/* Right Side (Desktop) / Bottom Stack (Mobile) */}
+                          <div className="text-sm text-muted-foreground sm:text-right shrink-0 mt-1 sm:mt-0">
+                            {item.date}
+                          </div>
+                        </div>
+
+                      </div>
+                    </BlurFade>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
         </React.Fragment>
       ))}
     </main>
