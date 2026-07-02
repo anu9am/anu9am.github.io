@@ -107,7 +107,7 @@ export const DATA = {
         "Working on control and actuation systems for the Open Parametric Hand (OPH) in prosthetic applications. Designing feedback loops for smart actuators, tuning control parameters for stable movements, and integrating actuator systems with overall hardware architecture.",
     },
     {
-      company: "Healthcare Technology Innovation Centre (HTIC)",
+      company: "Healthcare Technology Innovation Centre",
       href: "/HTICInternship",
       badges: ["Research Internship", "Onsite"],
       location: "IIT Madras, India",
