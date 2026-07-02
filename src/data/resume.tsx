@@ -135,12 +135,12 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Dr. A. P. J. Abdul Kalam Technical University", //[cite: 6]
-      href: "#",
-      degree: "Bachelor of Technology in Electronics and Communication Engineering (CGPA: 7.26/10)", //[cite: 6]
-      logoUrl: "/Logos/AKTU.png",
-      start: "Oct'23", //[cite: 6]
-      end: "Jul'27", //[cite: 6]
+      school: "Dr. A. P. J. Abdul Kalam Technical University",
+      degree: "Bachelor of Technology",
+      department: "Electronics and Communication Engineering",
+      logoUrl: "/Logos/AKTU.png", // Ensure you have an appropriate logo, or leave blank/remove this line
+      start: "Oct'23",
+      end: "Jul'27",
     },
   ],
   projects: [
