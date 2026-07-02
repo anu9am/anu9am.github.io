@@ -153,7 +153,7 @@ export const DATA = {
         "Developed control and actuation systems for a bionic hand using biomimetic tendon-driven actuation. Designed smart feedback loops to improve dexterity and responsiveness across different grasping tasks.",
       technologies: ["C++", "PID Control", "Teensy 4.1", "Voice Recognition"],
       links: [],
-      image: "/Photos/CREATE_Lab/Demonstration.gif", // Add your project image here
+      image: "/Photos/CREATE_Lab/OpenParametricHand.png", // Add your project image here
       video: "",
     },
     {
@@ -165,7 +165,7 @@ export const DATA = {
         "Designed and implemented dual autonomous navigation systems (Vision-based and Line-based) on a two-wheeled self-balancing robot utilizing MPU6050, motor encoders, and LQR/PID control loops.",
       technologies: ["Python", "C++", "OpenCV", "LQR & PID", "MPU6050"],
       links: [],
-      image: "/Photos/eYantra/Photo_1.png", // Add your project image here
+      image: "/Photos/eYantra/AutoSBR.png", // Add your project image here
       video: "",
     },
     {
@@ -177,7 +177,7 @@ export const DATA = {
         "Developed an FPGA-based autonomous maze-solving robot using Verilog HDL for post-harvest agricultural optimization. Implemented full hardware pipeline for real-time navigation and microclimate monitoring.",
       technologies: ["FPGA", "Verilog HDL", "Motor Control"],
       links: [],
-      image: "/Photos/Projects/MazeSolver.png", // Add your project image here
+      image: "/Photos/Projects/MazeSolver/MazeSolverBot.png", // Add your project image here
       video: "",
     },
     {
@@ -189,7 +189,7 @@ export const DATA = {
         "Developed a two-wheeled self-balancing robot integrating inverted-pendulum dynamics, IMU-based state estimation, and an autonomous pick-and-place mechanism themed for smart-city infrastructure.",
       technologies: ["PID Control", "LQR Control", "IMU Sensor"],
       links: [],
-      image: "/Photos/Projects/BuilderBot.png", // Add your project image here
+      image: "/Photos/Projects/BalancingBuilder/BalancingBuilderBot.png", // Add your project image here
       video: "",
     },
     {
@@ -201,7 +201,7 @@ export const DATA = {
         "Built a high-speed STM32-based line-follower robot using Pololu QTRX-16MD sensors and encoder-equipped micro metal-gear motors for precise and responsive navigation.",
       technologies: ["STM32", "PID", "Embedded C"],
       links: [],
-      image: "/Photos/Projects/LineFollower.png", // Add your project image here
+      image: "/Photos/Projects/LineFollower/LineFollowerRobot.png", // Add your project image here
       video: "",
     },
     {
@@ -213,7 +213,7 @@ export const DATA = {
         "Designed and built a portable dermatological screening device using Raspberry Pi and a camera module. Deployed CNN-based image classification with optimized on-device inference.",
       technologies: ["Raspberry Pi", "CNN", "Python"],
       links: [],
-      image: "/Photos/Projects/DermaScan.png", // Add your project image here
+      image: "/Photos/Projects/DermaScan/DermaScan.png", // Add your project image here
       video: "",
     },
   ],
