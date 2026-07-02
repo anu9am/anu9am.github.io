@@ -145,96 +145,123 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Maze Solver Bot", //[cite: 6]
-      href: "#",
-      dates: "Aug'25 - Mar'26", //[cite: 6]
+      title: "Open Parametric Hand",
+      href: "/CREATEInternship",
+      dates: "Mar'26 - Jul'26",
       active: true,
       description:
-        "Developed an FPGA-based autonomous maze-solving robot using Verilog HDL for post-harvest agricultural optimization. Achieved top 10 rank among over 680 teams in the e-Yantra Robotics Competition.", //[cite: 6]
-      technologies: [
-        "FPGA", //[cite: 6]
-        "Verilog HDL", //[cite: 6]
-        "Motor Control", //[cite: 6]
-      ],
+        "Developed control and actuation systems for a bionic hand using biomimetic tendon-driven actuation. Designed smart feedback loops to improve dexterity and responsiveness across different grasping tasks.",
+      technologies: ["C++", "PID Control", "Teensy 4.1", "Voice Recognition"],
       links: [],
-      image: "",
+      image: "/Photos/CREATE_Lab/Demonstration.gif", // Add your project image here
       video: "",
     },
     {
-      title: "Balancing Builder Bot", //[cite: 6]
-      href: "#",
-      dates: "Aug'24 - Mar'25", //[cite: 6]
+      title: "Autonomous Self Balancing Bot",
+      href: "/eYantraInternship",
+      dates: "May'25 - Jul'25",
       active: true,
       description:
-        "Developed a two-wheeled self-balancing robot integrating inverted-pendulum dynamics and an autonomous pick-and-place mechanism. Secured 4th place internationally among 1008 teams.", //[cite: 6]
-      technologies: [
-        "PID Control", //[cite: 6]
-        "LQR Control", //[cite: 6]
-        "IMU Sensor", //[cite: 6]
-      ],
+        "Designed and implemented dual autonomous navigation systems (Vision-based and Line-based) on a two-wheeled self-balancing robot utilizing MPU6050, motor encoders, and LQR/PID control loops.",
+      technologies: ["Python", "C++", "OpenCV", "LQR & PID", "MPU6050"],
       links: [],
-      image: "",
+      image: "/Photos/eYantra/Photo_1.png", // Add your project image here
       video: "",
     },
     {
-      title: "Fastest Line Follower", //[cite: 6]
+      title: "Maze Solver Bot",
       href: "#",
-      dates: "Aug'25 - Sep'25", //[cite: 6]
+      dates: "Aug'25 - Mar'26",
       active: true,
       description:
-        "Built a high-speed STM32-based line-follower robot using Pololu QTRX-16MD sensors for the Technoxian World Robotics Championship. Implemented PID-based tracking with yaw stabilization.", //[cite: 6]
-      technologies: [
-        "STM32", //[cite: 6]
-        "PID", //[cite: 6]
-        "Embedded C", //[cite: 6]
-      ],
+        "Developed an FPGA-based autonomous maze-solving robot using Verilog HDL for post-harvest agricultural optimization. Implemented full hardware pipeline for real-time navigation and microclimate monitoring.",
+      technologies: ["FPGA", "Verilog HDL", "Motor Control"],
       links: [],
-      image: "",
+      image: "/Photos/Projects/MazeSolver.png", // Add your project image here
       video: "",
     },
     {
-      title: "Derma Scan", //[cite: 6]
+      title: "Balancing Builder Bot",
       href: "#",
-      dates: "Sep'24 - Oct'24", //[cite: 6]
+      dates: "Aug'24 - Mar'25",
       active: true,
       description:
-        "Designed a portable dermatological screening device using Raspberry Pi. Deployed CNN-based image classification with optimized on-device inference.", //[cite: 6]
-      technologies: [
-        "Raspberry Pi", //[cite: 6]
-        "CNN", //[cite: 6]
-        "Python", //[cite: 6]
-      ],
+        "Developed a two-wheeled self-balancing robot integrating inverted-pendulum dynamics, IMU-based state estimation, and an autonomous pick-and-place mechanism themed for smart-city infrastructure.",
+      technologies: ["PID Control", "LQR Control", "IMU Sensor"],
       links: [],
-      image: "",
+      image: "/Photos/Projects/BuilderBot.png", // Add your project image here
+      video: "",
+    },
+    {
+      title: "Fast Line Follower",
+      href: "#",
+      dates: "Aug'25 - Sep'25",
+      active: true,
+      description:
+        "Built a high-speed STM32-based line-follower robot using Pololu QTRX-16MD sensors and encoder-equipped micro metal-gear motors for precise and responsive navigation.",
+      technologies: ["STM32", "PID", "Embedded C"],
+      links: [],
+      image: "/Photos/Projects/LineFollower.png", // Add your project image here
+      video: "",
+    },
+    {
+      title: "Derma Scan",
+      href: "#",
+      dates: "Sep'24 - Oct'24",
+      active: true,
+      description:
+        "Designed and built a portable dermatological screening device using Raspberry Pi and a camera module. Deployed CNN-based image classification with optimized on-device inference.",
+      technologies: ["Raspberry Pi", "CNN", "Python"],
+      links: [],
+      image: "/Photos/Projects/DermaScan.png", // Add your project image here
       video: "",
     },
   ],
   hackathons: [
     {
-      title: "QUEST 2025 Innovation Challenge", //[cite: 6]
-      dates: "Sep'25 - Nov'25", //[cite: 6]
-      location: "HMEL", //[cite: 6]
-      description: "Proposed a systems-level concept integrating offshore renewables and hydrogen production through Dynamic Floating Hydrogen Islands. Won 2nd position nationally.", //[cite: 6]
-      image: "/Logos/HMEL.png",
-      win: "2nd Position Nationally", //[cite: 6]
-      links: [],
-    },
-    {
-      title: "Medical Device Hackathon (MEDHA 2024)", //[cite: 6]
-      dates: "Sep'24 - Oct'24", //[cite: 6]
-      location: "BETIC Lab, IIT Bombay", //[cite: 6]
-      description: "Won Best Prototype for building 'Derma Scan', a portable dermatological screening device using Raspberry Pi and CNN-based image classification.", //[cite: 6]
-      image: "/Logos/BETIC.png",
-      win: "Best Prototype", //[cite: 6]
-      links: [],
-    },
-    {
-      title: "Patent Published: A Dual-Module System for Skin Condition Detection", //[cite: 6]
-      dates: "Jun'25", //[cite: 6]
-      location: "Indian Patent Office", //[cite: 6]
-      description: "Filed and published a patent (App No: 202511061177) for a skin condition detection system utilizing Machine Learning.", //[cite: 6]
+      title: "e-Yantra Robotics Competition",
+      dates: "2024-25 and 2025-26",
+      location: "IIT Bombay",
+      description: "Participated twice: In 2024-25, built the Balancing Builder Bot and secured 4th place internationally. In 2025-26, built the Maze Solver Bot and achieved a top 10 rank among over 680 teams.",
       image: "/Logos/eYantra.png",
+      win: "Multiple International & National Ranks",
       links: [],
     },
+    {
+      title: "QUEST 2025 Innovation Challenge",
+      dates: "Sep'25 - Nov'25",
+      location: "HMEL",
+      description: "Proposed a systems-level concept integrating offshore renewables, desalination, and hydrogen production as Dynamic Floating Hydrogen Islands.",
+      image: "/Logos/HMEL.png",
+      win: "2nd Position Nationally",
+      links: [],
+    },
+    {
+      title: "Technoxian World Robotics Championship",
+      dates: "Aug'25 - Sep'25",
+      location: "AICRA",
+      description: "Competed in the high-speed autonomous navigation challenge by building and programming a custom STM32-based Fast Line Follower robot with yaw stabilization.",
+      image: "/Logos/Technoxian.png",
+      win: "",
+      links: [],
+    },
+    {
+      title: "Medical Device Hackathon",
+      dates: "Sep'24 - Oct'24",
+      location: "BETIC Lab, IIT Bombay",
+      description: "Designed and built the 'Derma Scan', a portable CNN-based dermatological screening device with optimized on-device inference.",
+      image: "/Logos/BETIC.png", // Kept BETIC logo since MEDHA was held there, update if you have a specific MEDHA logo
+      win: "Best Prototype",
+      links: [],
+    },
+  ],
+  patent: [
+    {
+      title: "A Dual-Module System for Skin Condition Detection Using Machine Learning",
+      status: "Published",
+      applicationNumber: "202511061177",
+      date: "Filed on Jun'25",
+      logoUrl: "/Logos/Patent.png",
+    }
   ],
 } as const;
