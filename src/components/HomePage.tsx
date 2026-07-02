@@ -9,7 +9,7 @@ import HackathonsSection from "@/components/section/hackathons-section";
 import PhotosSection from "@/components/section/photos-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
-import { ArrowUpRight } from "lucide-react";
+// Note: ArrowUpRight import is removed since there are no hyperlinks in education now
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -49,34 +49,46 @@ const sectionComponents: Record<string, React.ReactNode> = {
         <div className="flex flex-col gap-8">
           {DATA.education.map((education, index) => (
             <BlurFade key={education.school} delay={BLUR_FADE_DELAY * 8 + index * 0.05}>
-              <a
-                href={education.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-x-3 justify-between group"
-              >
-                <div className="flex items-center gap-x-3 flex-1 min-w-0">
-                  {education.logoUrl ? (
-                    <img
-                      src={education.logoUrl}
-                      alt={education.school}
-                      className="size-12 md:size-16 p-1 border rounded-xl shadow ring-2 ring-border overflow-hidden object-contain flex-none"
-                    />
-                  ) : (
-                    <div className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
-                  )}
-                  <div className="flex-1 min-w-0 flex flex-col gap-0.5">
-                    <div className="font-semibold leading-none flex items-center gap-2">
+              {/* Changed <a> to <div> to remove hyperlinks */}
+              <div className="flex items-start gap-x-3 w-full">
+                
+                {/* Logo Section */}
+                {education.logoUrl ? (
+                  <img
+                    src={education.logoUrl}
+                    alt={education.school}
+                    className="size-12 md:size-16 p-1 border rounded-xl shadow ring-2 ring-border overflow-hidden object-contain flex-none"
+                  />
+                ) : (
+                  <div className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
+                )}
+                
+                {/* Responsive Text Layout */}
+                <div className="w-full flex flex-col sm:flex-row justify-between items-start gap-2 sm:gap-4 min-w-0">
+                  
+                  {/* Left Side (Desktop) / Top Stack (Mobile) */}
+                  <div className="flex flex-col gap-1.5 min-w-0">
+                    <h3 className="font-semibold text-base sm:text-lg leading-none">
                       {education.school}
-                      <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200" aria-hidden />
+                    </h3>
+                    <div className="font-medium text-sm text-foreground">
+                      {education.degree}
                     </div>
-                    <div className="font-sans text-sm text-muted-foreground">{education.degree}</div>
+                    {/* Added support for the department field */}
+                    {education.department && (
+                      <div className="text-sm text-muted-foreground">
+                        {education.department}
+                      </div>
+                    )}
                   </div>
+                  
+                  {/* Right Side (Desktop) / Bottom Stack (Mobile) */}
+                  <div className="text-sm text-muted-foreground sm:text-right shrink-0 mt-1 sm:mt-0">
+                    {education.start} - {education.end}
+                  </div>
+
                 </div>
-                <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
-                  <span>{education.start} - {education.end}</span>
-                </div>
-              </a>
+              </div>
             </BlurFade>
           ))}
         </div>
