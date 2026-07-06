@@ -53,14 +53,14 @@ export const DATA = {
   },
   photos: [],
   skills: [
-    { name: "ROS 2", icon: Astro }, //[cite: 6]
-    { name: "C / C++", icon: Typescript }, //[cite: 6]
-    { name: "Python", icon: Python }, //[cite: 6]
-    { name: "MATLAB", icon: ReactLight }, //[cite: 6]
+    { name: "ROS 2", icon: "/Icons/ros.png" }, //[cite: 6]
+    { name: "C / C++", icon: "/Icons/cpp.png" }, //[cite: 6]
+    { name: "Python", icon: "/Icons/python.png" }, //[cite: 6]
+    { name: "MATLAB", icon: "/Icons/matlab.png" }, //[cite: 6]
     { name: "Verilog HDL", icon: Nodejs }, //[cite: 6]
     { name: "TensorFlow", icon: NextjsIconDark }, //[cite: 6]
     { name: "PyTorch", icon: Golang }, //[cite: 6]
-    { name: "OpenCV", icon: Postgresql }, //[cite: 6]
+    { name: "OpenCV", icon: "/Icons/opencv.png" }, //[cite: 6]
     { name: "Git & GitHub", icon: Docker }, //[cite: 6]
     { name: "Embedded Systems", icon: Kubernetes }, //[cite: 6]
   ],
