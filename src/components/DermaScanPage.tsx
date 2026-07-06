@@ -40,11 +40,11 @@ export default function DermaScanPage() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden p-2">
+              <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
                 <img 
                   alt="Derma Scan Profile" 
                   src="/Photos/Projects/DermaScan/DermaScan.png" 
-                  className="w-full h-full object-cover rounded-full" 
+                  className="w-full h-full object-cover" 
                 />
               </div>
             </BlurFade>
