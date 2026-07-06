@@ -1,0 +1,9 @@
+---
+export const prerender = true;
+import Layout from "../layouts/Layout.astro";
+import BalancingBuilderBotPage from "@/components/BalancingBuilderBotPage";
+---
+
+<Layout title="Balancing Builder Bot">
+  <BalancingBuilderBotPage client:only="react" />
+</Layout>

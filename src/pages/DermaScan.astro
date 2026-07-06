@@ -1,0 +1,9 @@
+---
+export const prerender = true;
+import Layout from "../layouts/Layout.astro";
+import DermaScanPage from "@/components/DermaScanPage";
+---
+
+<Layout title="Derma Scan">
+  <DermaScanPage client:only="react" />
+</Layout>
