@@ -30,16 +30,8 @@ export default function BalancingBuilderBotPage() {
       {/* 1. HERO SECTION */}
       <section id="hero" className="mt-10 md:mt-10">
         <div className="mx-auto w-full space-y-8">
-          <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
-            <div className="gap-2 flex flex-col order-2 md:order-1">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
-                yOffset={8}
-                text="Balancing Builder Bot"
-              />
-            </div>
-            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
+          <div className="gap-4 flex flex-col items-start">
+            <BlurFade delay={BLUR_FADE_DELAY}>
               <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
                 <img 
                   alt="Balancing Builder Bot Profile" 
@@ -48,6 +40,14 @@ export default function BalancingBuilderBotPage() {
                 />
               </div>
             </BlurFade>
+            <div className="gap-2 flex flex-col">
+              <BlurFadeText
+                delay={BLUR_FADE_DELAY}
+                className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
+                yOffset={8}
+                text="Balancing Builder Bot"
+              />
+            </div>
           </div>
         </div>
       </section>
