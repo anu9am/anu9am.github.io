@@ -44,7 +44,7 @@ export default function OpenParametricHandPage() {
               <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
                 <img 
                   alt="Open Parametric Hand Profile" 
-                  src="/Photos/CREATE_Lab/The_OPH.png" 
+                  src="/Photos/CREATE_Lab/DP_OpenParametricHand.png" 
                   className="w-full h-full object-cover" 
                 />
               </div>

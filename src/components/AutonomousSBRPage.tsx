@@ -43,7 +43,7 @@ export default function AutonomousSBRPage() {
               <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
                 <img 
                   alt="Autonomous SBR Profile" 
-                  src="/Photos/eYantra/AutoSBR.png" 
+                  src="/Photos/eYantra/DP_AutoSBR.png" 
                   className="w-full h-full object-cover" 
                 />
               </div>

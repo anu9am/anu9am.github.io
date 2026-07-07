@@ -44,7 +44,7 @@ export default function MazeSolverBotPage() {
               <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
                 <img 
                   alt="Maze Solver Bot Profile" 
-                  src="/Photos/Projects/MazeSolver/MazeSolverBot.png" 
+                  src="/Photos/Projects/MazeSolver/DP_MazeSolverBot.png" 
                   className="w-full h-full object-cover" 
                 />
               </div>
