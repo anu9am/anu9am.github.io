@@ -45,7 +45,7 @@ export default function AutonomousSBRPage() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
                 yOffset={8}
-                text="Autonomous SBR"
+                text="Autonomous Self-Balancing Robot"
               />
             </div>
           </div>
