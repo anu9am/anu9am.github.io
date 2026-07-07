@@ -143,6 +143,22 @@ export default function FastLFRPage() {
         </div>
       </section>
 
+      {/* 7. CERTIFICATE */}
+      <section id="certificate">
+        <SectionBadge label="Certificate" />
+        <div className="flex flex-col items-center gap-6 w-full">
+          <BlurFade delay={BLUR_FADE_DELAY * 12} className="w-full">
+            <div className="w-full max-w-[800px] mx-auto rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+              <img 
+                src="/Photos/Projects/LineFollower/Certificate_Technoxian.png" 
+                alt="Technoxian Certificate" 
+                className="w-full h-auto object-contain" 
+              />
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
     </main>
   );
 }

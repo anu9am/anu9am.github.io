@@ -143,6 +143,31 @@ export default function BalancingBuilderBotPage() {
         </div>
       </section>
 
+      {/* 7. CERTIFICATE */}
+      <section id="certificate">
+        <SectionBadge label="Certificate" />
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 12} className="flex-1 w-full max-w-[400px]">
+            <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+              <img 
+                src="/Photos/Projects/BalancingBuilder/eYRC24_Certificate_1.png" 
+                alt="eYRC Certificate Page 1" 
+                className="w-full h-auto object-contain" 
+              />
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 13} className="flex-1 w-full max-w-[400px]">
+            <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+              <img 
+                src="/Photos/Projects/BalancingBuilder/eYRC24_Certificate_2.png" 
+                alt="eYRC Certificate Page 2" 
+                className="w-full h-auto object-contain" 
+              />
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
     </main>
   );
 }

@@ -164,6 +164,22 @@ export default function AutonomousSBRPage() {
         </div>
       </section>
 
+      {/* 7. CERTIFICATE */}
+      <section id="certificate">
+        <SectionBadge label="Certificate" />
+        <div className="flex flex-col items-center gap-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 12}>
+            <div className="w-full max-w-[500px] rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+              <img 
+                src="/Photos/eYantra/Certificate_Page1.png" 
+                alt="Autonomous SBR Certificate" 
+                className="w-full h-auto object-contain" 
+              />
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
     </main>
   );
 }
