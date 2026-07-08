@@ -107,6 +107,24 @@ export default function BalancingBuilderBotPage() {
               <p>
                 Implemented IMU-based attitude estimation by fusing accelerometer and gyroscope measurements to obtain accurate, low-latency tilt estimation for closed-loop balancing.
               </p>
+              <p className="mt-2">
+                The MPU6050 complementary filter leverages the strengths of both sensors:
+              </p>
+              <ul className="list-disc pl-6 space-y-1 mt-1">
+                <li><strong>Accelerometers</strong> are stable but noisy.</li>
+                <li><strong>Gyroscopes</strong> are precise but drift over time.</li>
+              </ul>
+              <p className="mt-4 font-semibold text-foreground">Arduino Code for Complementary Filter:</p>
+              <pre className="p-4 rounded-lg bg-muted text-xs overflow-x-auto border border-border my-2">
+                <code className="text-foreground font-mono">
+{`float complementaryFilter(float gyroAngle, float accelAngle) {
+    return (gyroAngle * 0.98) + (accelAngle * 0.02);
+}`}
+                </code>
+              </pre>
+              <p className="mt-2">
+                This method is computationally efficient and suitable for real-time angle measurement applications.
+              </p>
             </div>
             <div className="w-full h-48 max-w-md rounded-xl border-2 border-dashed border-muted flex items-center justify-center bg-muted/20 text-muted-foreground font-mono text-sm">
               &lt;Photo Sensor Fusion&gt;
