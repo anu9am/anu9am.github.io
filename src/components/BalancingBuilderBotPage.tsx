@@ -89,14 +89,14 @@ export default function BalancingBuilderBotPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="w-full h-40 rounded-xl border-2 border-dashed border-muted flex items-center justify-center bg-muted/20 text-muted-foreground font-mono text-sm text-center px-2">
-                &lt;Photo Inverted Pendulum&gt;
+              <div className="w-full h-40 rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+                <img src="/Photos/Projects/BalancingBuilder/InvertedPendulum.png" alt="Inverted Pendulum" className="w-full h-full object-cover" />
               </div>
-              <div className="w-full h-40 rounded-xl border-2 border-dashed border-muted flex items-center justify-center bg-muted/20 text-muted-foreground font-mono text-sm text-center px-2">
-                &lt;Photo PID Control&gt;
+              <div className="w-full h-40 rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+                <img src="/Photos/Projects/BalancingBuilder/PIDControl.png" alt="PID Control" className="w-full h-full object-cover" />
               </div>
-              <div className="w-full h-40 rounded-xl border-2 border-dashed border-muted flex items-center justify-center bg-muted/20 text-muted-foreground font-mono text-sm text-center px-2">
-                &lt;Photo LQR Control&gt;
+              <div className="w-full h-40 rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+                <img src="/Photos/Projects/BalancingBuilder/LQRControl.png" alt="LQR Control" className="w-full h-full object-cover" />
               </div>
             </div>
           </BlurFade>
@@ -140,8 +140,8 @@ export default function BalancingBuilderBotPage() {
                 Designed a lightweight 3D-printed robotic arm and servo-driven gripper capable of picking, transporting, and placing construction blocks while minimizing the impact on the robot's stability.
               </p>
             </div>
-            <div className="w-full h-48 max-w-md rounded-xl border-2 border-dashed border-muted flex items-center justify-center bg-muted/20 text-muted-foreground font-mono text-sm">
-              &lt;Photo Manipulator&gt;
+            <div className="w-full max-w-md rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+              <img src="/Photos/Projects/BalancingBuilder/Manipulator.png" alt="Manipulator" className="w-full h-auto object-cover" />
             </div>
           </BlurFade>
 
@@ -152,8 +152,8 @@ export default function BalancingBuilderBotPage() {
                 Developed a custom Android application using MIT App Inventor to wirelessly control both the robot's locomotion and manipulator via Bluetooth UART communication. The interface enabled intuitive real-time operation while the balancing controller maintained platform stability.
               </p>
             </div>
-            <div className="w-full h-48 max-w-md rounded-xl border-2 border-dashed border-muted flex items-center justify-center bg-muted/20 text-muted-foreground font-mono text-sm">
-              &lt;Photo App&gt;
+            <div className="w-full max-w-md rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+              <img src="/Photos/Projects/BalancingBuilder/ControllerApp.png" alt="Controller App" className="w-full h-auto object-cover" />
             </div>
           </BlurFade>
 
@@ -165,11 +165,11 @@ export default function BalancingBuilderBotPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="w-full h-48 rounded-xl border-2 border-dashed border-muted flex items-center justify-center bg-muted/20 text-muted-foreground font-mono text-sm">
-                &lt;Photo Simulation&gt;
+              <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+                <video src="/Photos/Projects/BalancingBuilder/SimulationDemo.mp4" autoPlay loop muted playsInline className="w-full h-auto object-cover" />
               </div>
-              <div className="w-full h-48 rounded-xl border-2 border-dashed border-muted flex items-center justify-center bg-muted/20 text-muted-foreground font-mono text-sm">
-                &lt;Photo Physical Robot&gt;
+              <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+                <video src="/Photos/Projects/BalancingBuilder/HardwareDemo.mp4" autoPlay loop muted playsInline className="w-full h-auto object-cover" />
               </div>
             </div>
           </BlurFade>
