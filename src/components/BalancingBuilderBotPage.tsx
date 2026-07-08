@@ -126,9 +126,6 @@ export default function BalancingBuilderBotPage() {
                 This method is computationally efficient and suitable for real-time angle measurement applications.
               </p>
             </div>
-            <div className="w-full h-48 max-w-md rounded-xl border-2 border-dashed border-muted flex items-center justify-center bg-muted/20 text-muted-foreground font-mono text-sm">
-              &lt;Photo Sensor Fusion&gt;
-            </div>
           </BlurFade>
 
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
