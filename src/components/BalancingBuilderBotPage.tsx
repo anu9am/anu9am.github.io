@@ -1,3 +1,7 @@
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
 import React from "react";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -19,6 +23,15 @@ function SectionBadge({ label }: { label: string }) {
 }
 
 export default function BalancingBuilderBotPage() {
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
+
+  const stabilizationPhotos = [
+    { src: "/Photos/Projects/BalancingBuilder/InvertedPendulum.png", alt: "Inverted Pendulum" },
+    { src: "/Photos/Projects/BalancingBuilder/PIDControl.png", alt: "PID Control" },
+    { src: "/Photos/Projects/BalancingBuilder/LQRControl.png", alt: "LQR Control" },
+  ];
+
   return (
     <main className="min-h-dvh flex flex-col gap-8 relative">
 
@@ -89,15 +102,19 @@ export default function BalancingBuilderBotPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="w-full h-40 rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
-                <img src="/Photos/Projects/BalancingBuilder/InvertedPendulum.png" alt="Inverted Pendulum" className="w-full h-full object-cover" />
-              </div>
-              <div className="w-full h-40 rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
-                <img src="/Photos/Projects/BalancingBuilder/PIDControl.png" alt="PID Control" className="w-full h-full object-cover" />
-              </div>
-              <div className="w-full h-40 rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
-                <img src="/Photos/Projects/BalancingBuilder/LQRControl.png" alt="LQR Control" className="w-full h-full object-cover" />
-              </div>
+              {stabilizationPhotos.map((photo, i) => (
+                <div 
+                  key={i}
+                  onClick={() => { setIndex(i); setOpen(true); }}
+                  className="cursor-pointer aspect-[4/3] rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted flex items-center justify-center hover:scale-[1.02] transition-transform duration-300"
+                >
+                  <img 
+                    src={photo.src} 
+                    alt={photo.alt} 
+                    className="w-full h-full object-contain p-2" 
+                  />
+                </div>
+              ))}
             </div>
           </BlurFade>
 
@@ -317,6 +334,15 @@ export default function BalancingBuilderBotPage() {
           </BlurFade>
         </div>
       </section>
+
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        index={index}
+        slides={stabilizationPhotos}
+        on={{ view: ({ index: currentIndex }) => setIndex(currentIndex) }} 
+        controller={{ closeOnBackdropClick: true }}
+      />
 
     </main>
   );
