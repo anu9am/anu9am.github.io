@@ -115,12 +115,17 @@ export default function BalancingBuilderBotPage() {
                 <li><strong>Gyroscopes</strong> are precise but drift over time.</li>
               </ul>
               <p className="mt-4 font-semibold text-foreground">Arduino Code for Complementary Filter:</p>
-              <pre className="p-4 rounded-lg bg-muted text-xs overflow-x-auto border border-border my-2">
-                <code className="text-foreground font-mono">
-{`float complementaryFilter(float gyroAngle, float accelAngle) {
-    return (gyroAngle * 0.98) + (accelAngle * 0.02);
-}`}
-                </code>
+              <pre className="p-4 rounded-lg bg-muted text-xs overflow-x-auto border border-border my-2 font-mono leading-relaxed">
+                <span className="text-blue-500 dark:text-sky-400">float</span>{" "}
+                <span className="text-emerald-600 dark:text-emerald-400">complementaryFilter</span>(
+                <span className="text-blue-500 dark:text-sky-400">float</span> gyroAngle,{" "}
+                <span className="text-blue-500 dark:text-sky-400">float</span> accelAngle) {"{"}
+                <br />
+                &nbsp;&nbsp;<span className="text-purple-600 dark:text-purple-400">return</span> (gyroAngle *{" "}
+                <span className="text-amber-600 dark:text-amber-400">0.98</span>) + (accelAngle *{" "}
+                <span className="text-amber-600 dark:text-amber-400">0.02</span>);
+                <br />
+                {"}"}
               </pre>
               <p className="mt-2">
                 This method is computationally efficient and suitable for real-time angle measurement applications.
