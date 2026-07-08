@@ -80,16 +80,80 @@ export default function AutonomousSBRPage() {
       <section id="project-details">
         <SectionBadge label="Project Details" />
         <div className="flex flex-col gap-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+          
+          {/* Vision Navigation Text */}
+          <BlurFade delay={BLUR_FADE_DELAY * 4}>
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
-              <ul className="list-disc pl-6 space-y-2">
-                <li><strong>Control Architecture:</strong> Cascaded control loop utilizing LQR for optimal balance and PID for velocity and heading control.</li>
-                <li><strong>State Estimation:</strong> Processed raw MPU6050 IMU data using a complementary filter to obtain accurate pitch angles free from drift and noise.</li>
-                <li><strong>Vision Navigation:</strong> Implemented OpenCV pipelines in Python for lane detection, color tracking, and obstacle recognition, relaying commands to the primary C++ controller.</li>
-                <li><strong>Odometry & Kinematics:</strong> Fused quadrature encoder feedback to estimate real-time robot displacement and velocity.</li>
+              <h3 className="text-foreground font-semibold mb-2">Vision-Based Navigation</h3>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Developed an autonomous navigation system using computer vision and ArUco marker detection.</li>
+                <li>Implemented camera calibration, robot localization, and real-time path planning using an overhead camera.</li>
+                <li>Enabled accurate navigation in controlled environments without requiring onboard cameras or complex sensors.</li>
               </ul>
             </div>
           </BlurFade>
+
+          {/* Vision Navigation Video */}
+          <BlurFade delay={BLUR_FADE_DELAY * 5}>
+            <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+              <video 
+                src="/Photos/eYantra/Vision_Demo.mp4" 
+                autoPlay 
+                loop 
+                muted 
+                playsInline
+                className="w-full h-auto object-cover" 
+              />
+            </div>
+          </BlurFade>
+
+          {/* Line Navigation Text */}
+          <BlurFade delay={BLUR_FADE_DELAY * 6}>
+            <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
+              <h3 className="text-foreground font-semibold mt-4 mb-2">Line-Based Navigation</h3>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Implemented autonomous path following while maintaining dynamic balance.</li>
+                <li>Developed white/black line following using a 3-channel optical sensor array.</li>
+                <li>Designed a 5-channel analog Hall effect sensor array for magnetic track following, providing a reliable alternative to optical tracking under varying ambient lighting conditions.</li>
+              </ul>
+            </div>
+          </BlurFade>
+
+          {/* Line Navigation Videos (Side-by-Side) */}
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+                <video 
+                  src="/Photos/eYantra/Line_Demo1.mp4" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-auto object-cover" 
+                />
+              </div>
+              <div className="w-full rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+                <video 
+                  src="/Photos/eYantra/Line_Demo2.mp4" 
+                  autoPlay 
+                  loop 
+                  muted 
+                  playsInline
+                  className="w-full h-auto object-cover" 
+                />
+              </div>
+            </div>
+          </BlurFade>
+
+          {/* Robot Platform Callout */}
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+            <div className="bg-muted/50 border border-border rounded-lg p-4 mt-2">
+              <p className="text-sm font-medium text-foreground">
+                <strong className="text-primary">Robot Platform:</strong> Both navigation systems were developed on the same two-wheeled self-balancing robot, with balance control handled independently using LQR and PID controller.
+              </p>
+            </div>
+          </BlurFade>
+
         </div>
       </section>
 
