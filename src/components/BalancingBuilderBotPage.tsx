@@ -166,7 +166,7 @@ export default function BalancingBuilderBotPage() {
                 Designed a custom PCB in <strong>KiCad</strong> that integrates the robot's core electronics into a compact control board, reducing wiring complexity and improving system reliability. The board incorporates an Arduino Nano carrier, an integrated dual-channel motor driver, configurable jumper-based routing, onboard 5 V and 7.4 V power distribution, an HC-05 Bluetooth interface, and extended GPIO headers. The PCB was optimized for thermal performance and compact chassis integration, enabling a robust and modular embedded control system.
               </p>
             </div>
-            <div className="w-full max-w-md rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+            <div className="w-full max-w-md md:max-w-xs mx-auto rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
               <img 
                 src="/Photos/Projects/BalancingBuilder/CustomPCB.png" 
                 alt="Custom PCB Layout" 
@@ -182,7 +182,7 @@ export default function BalancingBuilderBotPage() {
                 Designed a lightweight 3D-printed robotic arm and servo-driven gripper capable of picking, transporting, and placing construction blocks while minimizing the impact on the robot's stability.
               </p>
             </div>
-            <div className="w-full max-w-md rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+            <div className="w-full max-w-md mx-auto rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
               <img src="/Photos/Projects/BalancingBuilder/Manipulator.png" alt="Manipulator" className="w-full h-auto object-cover" />
             </div>
           </BlurFade>
@@ -194,7 +194,7 @@ export default function BalancingBuilderBotPage() {
                 Developed a custom Android application using MIT App Inventor to wirelessly control both the robot's locomotion and manipulator via Bluetooth UART communication. The interface enabled intuitive real-time operation while the balancing controller maintained platform stability.
               </p>
             </div>
-            <div className="w-full max-w-md rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
+            <div className="w-full max-w-md md:max-w-xs mx-auto rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
               <img src="/Photos/Projects/BalancingBuilder/ControllerApp.png" alt="Controller App" className="w-full h-auto object-cover" />
             </div>
           </BlurFade>
