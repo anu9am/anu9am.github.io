@@ -5,6 +5,7 @@ import "yet-another-react-lightbox/styles.css";
 import React from "react";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { Icons } from "@/components/icons";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -358,6 +359,60 @@ export default function BalancingBuilderBotPage() {
                 alt="eYRC Certificate Page 2" 
                 className="w-full h-auto object-contain" 
               />
+            </div>
+          </BlurFade>
+        </div>
+      </section>
+
+      {/* 8. TEAM SECTION */}
+      <section id="team">
+        <SectionBadge label="Team" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <div className="group flex items-center gap-4 w-full text-left py-4 hover:bg-muted/50 rounded-xl px-2 -mx-2 transition-colors">
+              <img
+                src="/Photos/Team_Members/Anupam.png"
+                alt="Anupam Chatterjee"
+                className="size-16 md:size-20 border rounded-full shadow-lg ring-4 ring-muted overflow-hidden object-cover flex-none bg-white"
+              />
+              <div className="flex-1 min-w-0 gap-1 flex flex-col">
+                <div className="font-semibold text-lg leading-none">
+                  Anupam Chatterjee
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/anu9am/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-sm font-medium text-primary hover:underline flex items-center gap-1.5 mt-1.5 w-fit"
+                >
+                  <Icons.linkedin className="size-4" />
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+          </BlurFade>
+
+          <BlurFade delay={BLUR_FADE_DELAY * 15}>
+            <div className="group flex items-center gap-4 w-full text-left py-4 hover:bg-muted/50 rounded-xl px-2 -mx-2 transition-colors">
+              <img
+                src="/Photos/Team_Members/Arpita.jpg"
+                alt="Arpita Kumari"
+                className="size-16 md:size-20 border rounded-full shadow-lg ring-4 ring-muted overflow-hidden object-cover flex-none bg-white"
+              />
+              <div className="flex-1 min-w-0 gap-1 flex flex-col">
+                <div className="font-semibold text-lg leading-none">
+                  Arpita Kumari
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/OkayArpita/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans text-sm font-medium text-primary hover:underline flex items-center gap-1.5 mt-1.5 w-fit"
+                >
+                  <Icons.linkedin className="size-4" />
+                  LinkedIn
+                </a>
+              </div>
             </div>
           </BlurFade>
         </div>
