@@ -48,8 +48,36 @@ export default function BalancingBuilderBotPage() {
       {/* 1. HERO SECTION */}
       <section id="hero" className="mt-10 md:mt-10">
         <div className="mx-auto w-full space-y-8">
-          <div className="gap-4 flex flex-col items-start">
-            <BlurFade delay={BLUR_FADE_DELAY}>
+          <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between items-start">
+            <div className="gap-2 flex flex-col order-2 md:order-1 flex-1">
+              <BlurFadeText
+                delay={BLUR_FADE_DELAY}
+                className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
+                yOffset={8}
+                text="Balancing Builder Bot"
+              />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <div className="group flex items-start gap-4 w-full text-left mt-2">
+                  <img
+                    src="/Logos/eYantra.png"
+                    alt="e-Yantra Robotics Competition"
+                    className="size-14 md:size-16 p-1 border rounded-xl shadow ring-2 ring-border overflow-hidden object-contain flex-none bg-muted"
+                  />
+                  <div className="flex-1 min-w-0 gap-1 flex flex-col justify-center">
+                    <div className="font-semibold text-base md:text-lg leading-none">
+                      e-Yantra Robotics Competition
+                    </div>
+                    <div className="font-sans text-sm font-medium text-foreground">
+                      IIT Bombay, India
+                    </div>
+                    <div className="font-sans text-sm italic text-muted-foreground mt-1">
+                      2024-25 Season (4th Place Internationally)
+                    </div>
+                  </div>
+                </div>
+              </BlurFade>
+            </div>
+            <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2 shrink-0">
               <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
                 <img 
                   alt="Balancing Builder Bot Profile" 
@@ -58,14 +86,6 @@ export default function BalancingBuilderBotPage() {
                 />
               </div>
             </BlurFade>
-            <div className="gap-2 flex flex-col">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
-                yOffset={8}
-                text="Balancing Builder Bot"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -309,32 +329,6 @@ export default function BalancingBuilderBotPage() {
         </BlurFade>
       </section>
 
-      {/* 6. DEMONSTRATED AT */}
-      <section id="demonstrated-at">
-        <SectionBadge label="Demonstrated At" />
-        <div className="flex flex-col gap-2">
-          <BlurFade delay={BLUR_FADE_DELAY * 11}>
-            <div className="group flex items-start md:items-center gap-4 w-full text-left py-4 hover:bg-muted/50 rounded-xl px-2 -mx-2 transition-colors">
-              <img
-                src="/Logos/eYantra.png"
-                alt="e-Yantra Robotics Competition"
-                className="size-16 md:size-20 p-1 border rounded-xl shadow ring-4 ring-border overflow-hidden object-contain flex-none bg-muted"
-              />
-              <div className="flex-1 min-w-0 gap-1 flex flex-col">
-                <div className="font-semibold text-lg leading-none">
-                  e-Yantra Robotics Competition
-                </div>
-                <div className="font-sans text-sm font-medium text-foreground">
-                  IIT Bombay, India
-                </div>
-                <div className="font-sans text-sm italic text-muted-foreground mt-1">
-                  2024-25 Season (4th Place Internationally)
-                </div>
-              </div>
-            </div>
-          </BlurFade>
-        </div>
-      </section>
 
       {/* 7. CERTIFICATE */}
       <section id="certificate">
