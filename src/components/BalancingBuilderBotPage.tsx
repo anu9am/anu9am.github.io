@@ -48,7 +48,7 @@ export default function BalancingBuilderBotPage() {
       {/* 1. HERO SECTION */}
       <section id="hero" className="mt-10 md:mt-10">
         <div className="mx-auto w-full space-y-8">
-          <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between items-start">
+          <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between items-start md:items-center">
             <div className="gap-2 flex flex-col order-2 md:order-1 flex-1">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
@@ -79,7 +79,7 @@ export default function BalancingBuilderBotPage() {
                       />
                     </div>
                     <div className="font-sans text-sm italic text-muted-foreground mt-1">
-                      2024-25 Season (4th Place Internationally)
+                      2024-25 Season <span className="block sm:inline">(4th Place Internationally)</span>
                     </div>
                   </div>
                 </div>
