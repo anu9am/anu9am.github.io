@@ -67,8 +67,13 @@ export default function BalancingBuilderBotPage() {
                     <div className="font-semibold text-base md:text-lg leading-none">
                       e-Yantra Robotics Competition
                     </div>
-                    <div className="font-sans text-sm font-medium text-foreground">
+                    <div className="font-sans text-sm font-medium text-foreground flex items-center gap-1.5">
                       IIT Bombay, India
+                      <img 
+                        src="https://cdn-icons-png.flaticon.com/512/330/330439.png" 
+                        alt="India Flag" 
+                        className="h-4 w-4 object-contain"
+                      />
                     </div>
                     <div className="font-sans text-sm italic text-muted-foreground mt-1">
                       2024-25 Season (4th Place Internationally)
