@@ -57,6 +57,9 @@ export default function BalancingBuilderBotPage() {
                 text="Balancing Builder Bot"
               />
               <BlurFade delay={BLUR_FADE_DELAY}>
+                <p className="text-amber-500 dark:text-amber-400 font-medium italic text-sm mt-3">
+                  Demonstrated at:
+                </p>
                 <div className="group flex items-start gap-4 w-full text-left mt-2">
                   <img
                     src="/Logos/eYantra.png"
@@ -83,7 +86,7 @@ export default function BalancingBuilderBotPage() {
               </BlurFade>
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2 shrink-0">
-              <div className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
+              <div className="size-28 md:size-36 border rounded-full shadow-lg ring-4 ring-muted flex items-center justify-center bg-white overflow-hidden">
                 <img 
                   alt="Balancing Builder Bot Profile" 
                   src="/Photos/Projects/BalancingBuilder/DP_BalancingBuilderBot.png" 
