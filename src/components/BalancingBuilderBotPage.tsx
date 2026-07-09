@@ -369,7 +369,7 @@ export default function BalancingBuilderBotPage() {
         <SectionBadge label="Team" />
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 sm:gap-y-6 w-full max-w-xl mx-auto mt-6">
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <div className="group flex items-center gap-4 w-full text-left py-4 hover:bg-muted/50 rounded-xl px-2 -mx-2 transition-colors">
+            <div className="flex items-center gap-4 w-full text-left py-2">
               <img
                 src="/Photos/Team_Members/Anupam.png"
                 alt="Anupam Chatterjee"
@@ -393,7 +393,7 @@ export default function BalancingBuilderBotPage() {
           </BlurFade>
 
           <BlurFade delay={BLUR_FADE_DELAY * 15}>
-            <div className="group flex items-center gap-4 w-full text-left py-4 hover:bg-muted/50 rounded-xl px-2 -mx-2 transition-colors">
+            <div className="flex items-center gap-4 w-full text-left py-2">
               <img
                 src="/Photos/Team_Members/Arpita.jpg"
                 alt="Arpita Kumari"
