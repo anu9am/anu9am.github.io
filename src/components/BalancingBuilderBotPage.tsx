@@ -163,27 +163,10 @@ export default function BalancingBuilderBotPage() {
             <div className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert mb-4">
               <h3 className="text-foreground font-semibold mb-2">Custom PCB Design</h3>
               <p>
-                Designed using <strong>KiCad</strong>, this custom PCB houses a general application circuit for the two-wheeled robot. It integrates the core electronics onto a single board, significantly reducing the robot's form-factor, wiring complexity, and potential failure points.
+                Designed a custom PCB in <strong>KiCad</strong> that integrates the robot's core electronics into a compact control board, reducing wiring complexity and improving system reliability. The board incorporates an Arduino Nano carrier, an integrated dual-channel motor driver, configurable jumper-based routing, onboard 5 V and 7.4 V power distribution, an HC-05 Bluetooth interface, and extended GPIO headers. The PCB was optimized for thermal performance and compact chassis integration, enabling a robust and modular embedded control system.
               </p>
-              <p className="mt-2 font-semibold text-foreground">Key Features & Overview:</p>
-              <ul className="list-disc pl-6 space-y-1 mt-1">
-                <li><strong>Arduino Nano Carrier:</strong> Breakout and carrier board specifically designed for the Arduino Nano.</li>
-                <li><strong>Inbuilt Motor Driver:</strong> Integrated dual-channel motor driver which can also be operated standalone.</li>
-                <li><strong>Configurable Connections:</strong> Jumper caps for selecting non-default connections for both the motor driver and Arduino input voltage.</li>
-                <li><strong>Power Distribution & Regulation:</strong> Inbuilt power distribution allowing 5V and 7.4V lines to power external devices.</li>
-                <li><strong>Modularity:</strong> Pluggable socket structure for the HC-05 Bluetooth module and extended Arduino GPIO headers.</li>
-                <li><strong>Thermal Management:</strong> Designed with copper pours and routing that optimizes heat dissipation for maximum rated current capacity.</li>
-                <li><strong>Mechanical Fit:</strong> Extremely compact design suitable for direct mounting and creating custom enclosures/chassis.</li>
-              </ul>
             </div>
-            <div 
-              onClick={() => {
-                setLightboxPhotos(pcbPhotos);
-                setIndex(0);
-                setOpen(true);
-              }}
-              className="w-full max-w-md rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted cursor-pointer hover:scale-[1.02] transition-transform duration-300"
-            >
+            <div className="w-full max-w-md rounded-xl overflow-hidden border shadow-sm ring-2 ring-border bg-muted">
               <img 
                 src="/Photos/Projects/BalancingBuilder/CustomPCB.png" 
                 alt="Custom PCB Layout" 
