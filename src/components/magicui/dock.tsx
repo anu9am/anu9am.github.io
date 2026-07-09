@@ -37,6 +37,10 @@ const Dock = ({ className, children, magnification = DEFAULT_MAGNIFICATION, dist
       <motion.div
         onMouseMove={(e) => mouseX.set(e.pageX)}
         onMouseLeave={() => mouseX.set(Infinity)}
+        onTouchMove={(e) => mouseX.set(e.touches[0].pageX)}
+        onTouchStart={(e) => mouseX.set(e.touches[0].pageX)}
+        onTouchEnd={() => mouseX.set(Infinity)}
+        onTouchCancel={() => mouseX.set(Infinity)}
         className={cn("mx-auto w-max h-full flex items-end justify-center overflow-visible rounded-full border", className)}
       >
         {children}
