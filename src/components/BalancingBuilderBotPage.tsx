@@ -367,7 +367,7 @@ export default function BalancingBuilderBotPage() {
       {/* 8. TEAM SECTION */}
       <section id="team">
         <SectionBadge label="Team" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 sm:gap-y-6 w-full max-w-xl mx-auto mt-6">
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <div className="group flex items-center gap-4 w-full text-left py-4 hover:bg-muted/50 rounded-xl px-2 -mx-2 transition-colors">
               <img
